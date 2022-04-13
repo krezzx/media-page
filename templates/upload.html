@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Upload Page</h1>
+<div class='jumbotron'>
+    <form method="post" action="{{url_for('uploader')}}" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Enter you roll no.:- </label>
+            <input type="text" class="form-control" id="roll_no" name="roll" aria-describedby="roll_help">
+            <small id="roll_help" class="form-text text-muted">Enter your roll number</small>
+          </div>
+          <div class="form-group">
+            <label for="pic_upload">Example file input</label>
+            <input type="file" class="form-control-file" id="pic_upload" name="inputFile">
+        </div>
+        <div class="form-group">
+            <label for="caption">Enter Caption</label>
+            <input type="textarea" class="form-control" id="caption" name="caption">
+        </div>
+        <input type="submit" value="SUBMIT">
+
+
+    </form>
+</div>
+
+{% endblock %}

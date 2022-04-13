@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      
+      <div class="wrapper" id="app">
+        <div class="player">
+          <div class="player__top">
+            <div class="player-cover">
+              <!-- <transition-group :name="transitionName">
+                  <div class="player-cover__item"style="{ backgroundImage: `url(${track.cover})`; max-height: }"></div>
+              </transition-group> -->
+              <img src="{{url_for('static',filename='uploads/205121082_trichy.jpg')}}" style="max-height:230px; max-width:250px; border-radius: 15px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+
+
+{% endblock %} 
